@@ -1,0 +1,1 @@
+Test memory usage and removing element using delete

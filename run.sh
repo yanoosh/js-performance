@@ -2,7 +2,9 @@
 
 for script in $@
 do
+    echo ${script}
     date >> ${script}.result
-    time -v -a -o ${script}.result node ${script}
+    time -f 't:%U m:%MKB' -a -o ${script}.result node ${script}; tail -n1 ${script}.result
+    time -f 't:%U m:%MKB' -a -o ${script}.result node ${script}; tail -n1 ${script}.result
 done
 

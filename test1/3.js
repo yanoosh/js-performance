@@ -8,6 +8,5 @@ while(x--) {
     value[x] = function () {
         this.release();
     };
-    value[x] = null;
     delete value[x];
 }
