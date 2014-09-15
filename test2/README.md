@@ -1,0 +1,1 @@
+Variable definition inside and outside of loop
