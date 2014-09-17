@@ -1,0 +1,1 @@
+Speed of object by size and property length. (+special chars in properties)
