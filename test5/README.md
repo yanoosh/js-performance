@@ -1,0 +1,1 @@
+Function using outside variable in different level. (scope)
