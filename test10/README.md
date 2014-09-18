@@ -1,0 +1,1 @@
+Defining all callback function every time vs small connection w scope, all definition outside callback
