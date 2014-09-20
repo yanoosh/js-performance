@@ -1,6 +1,6 @@
 "use strict";
 
-var tester = require('../tester');
+var tester = new (require('../tester'));
 
 var callback = function (context) {
     if (false) {

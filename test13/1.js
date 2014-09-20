@@ -1,6 +1,6 @@
 "use strict";
 
-var tester = require('../tester');
+var tester = new (require('../tester'));
 
 !function() {
     var prv1 = 1;

@@ -1,6 +1,6 @@
 "use strict";
 
-var tester = require('../tester');
+var tester = new (require('../tester'));
 
 tester.prefix =
     ".23456789 123456" + // dot

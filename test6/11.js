@@ -1,6 +1,6 @@
 "use strict";
 
-var tester = require('../tester');
+var tester = new (require('../tester'));
 
 tester.obj = {exist: 1, 'exist..': 2};
 

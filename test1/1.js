@@ -1,6 +1,6 @@
 "use strict";
 
-var tester = require('../tester');
+var tester = new (require('../tester'));
 
 tester.value = [];
 tester.scenario = function () {
@@ -10,6 +10,4 @@ tester.scenario = function () {
     this.value[this.n] = null;
     delete this.value[this.n];
 };
-
-tester.run();
 

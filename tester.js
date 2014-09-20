@@ -1,4 +1,14 @@
-var tester = {
+var Tester = function () {
+    var _this = this;
+
+    if (typeof process != 'undefined') {
+        process.on('exit', function () {
+            _this.run();
+        });
+    }
+};
+
+Tester.prototype = {
     context: null,
     maxTime: 5000,
     interval: 10000,
@@ -19,8 +29,4 @@ var tester = {
     }
 };
 
-process.on('exit', function () {
-    tester.run();
-});
-
-module.exports = tester;
+module.exports = Tester;
