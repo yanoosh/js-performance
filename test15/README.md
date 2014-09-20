@@ -1,0 +1,1 @@
+Test when is good moment to use variable
