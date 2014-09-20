@@ -1,0 +1,1 @@
+Test casting to string: "" + , toString, without cast
