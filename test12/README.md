@@ -1,0 +1,1 @@
+Test script with and without "use strict".
