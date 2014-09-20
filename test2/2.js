@@ -1,11 +1,15 @@
 "use strict";
 
-var x = 5000000000;
-//      #___---___---
+var tester = require('../tester');
 
-while(x--) {
-    var value1 = x;
-    var value2 = x;
-    var value3 = x;
-    var value4 = x;
+tester.interval = 10;
+tester.scenario = function () {
+    var x = 1000;
+
+    while(x--) {
+        var value1 = x;
+        var value2 = x;
+        var value3 = x;
+        var value4 = x;
+    }
 }

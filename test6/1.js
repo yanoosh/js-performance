@@ -1,10 +1,9 @@
 "use strict";
 
-var x = 3000000000;
-//      #___---___---
+var tester = require('../tester');
 
-var obj = {exist: 1}
+tester.obj = {exist: 1};
 
-while(x--) {
-    if (obj.exist) {}
+tester.scenario = function () {
+    if (this.obj.exist) {}
 }

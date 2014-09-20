@@ -1,14 +1,12 @@
 "use strict";
 
-var x = 50000000;
-//      #___---___---
+var tester = require('../tester');
+tester.value = [];
+tester.scenario = function () {
+    var result;
 
-var value = [];
-var result;
-
-while(x--) {
-//    result = Boolean(value);
-//    result = !!value;
-    result = true == !!value;
-//    result = true == value;
+//    this.result = Boolean(this.value);
+//    this.result = !!this.value;
+    this.result = true == !!this.value;
+//    this.result = true == this.value;
 }

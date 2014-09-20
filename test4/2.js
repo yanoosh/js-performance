@@ -1,12 +1,7 @@
 "use strict";
 
-var x = 5000000000;
-//      #___---___---
+var tester = require('../tester');
 
-var f = function () {
+tester.scenario = function () {
     var value = 123;
 };
-
-while(x--) {
-    f()
-}

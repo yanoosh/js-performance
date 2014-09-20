@@ -1,10 +1,8 @@
 "use strict";
 
-var x = 200000000;
-//      #___---___---
+var tester = require('../tester');
 
-var aa = function (aaValue) {
-    var _ = aaValue;
+var callback = function (context) {
     if (false) {
         var _this = this, i, length, combo, module;
 
@@ -32,14 +30,10 @@ var aa = function (aaValue) {
 
         return module;
     }
-}
+};
 
-var a = function (aValue) {
+tester.scenario = function (context) {
     return function () {
-        return aa(aValue);
+        return callback(context);
     }
-}
-
-while(x--) {
-    a()
-}
+};

@@ -1,12 +1,14 @@
 "use strict";
 
-var x = 20000000;
-//      #___---___---
-var value = [];
+var tester = require('../tester');
 
-while(x--) {
-    value[x] = function () {
+tester.value = [];
+tester.scenario = function () {
+    this.value[this.n] = function () {
         this.release();
     };
-    value[x] = null;
-}
+    this.value[this.n] = null;
+};
+
+tester.run();
+

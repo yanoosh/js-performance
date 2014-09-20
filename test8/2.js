@@ -1,11 +1,11 @@
 "use strict";
 
-var x = 20000;
-//      #___---___---
-var prefix =
-    ".2345678"; // dot, 8
+var tester = require('../tester');
 
-while (x--) {
+tester.prefix =
+    ".2345678"; // dot, 8
+tester.interval = 10;
+tester.scenario = function () {
 
     var y = 100;
 
@@ -21,16 +21,16 @@ while (x--) {
     var obj10 = {};
 
     while(y--) {
-        obj1[prefix + y] = 'a';
-        obj2[prefix + y] = 'a';
-        obj3[prefix + y] = 'a';
-        obj4[prefix + y] = 'a';
-        obj5[prefix + y] = 'a';
-        obj6[prefix + y] = 'a';
-        obj7[prefix + y] = 'a';
-        obj8[prefix + y] = 'a';
-        obj9[prefix + y] = 'a';
-        obj10[prefix + y] = 'a';
+        obj1[this.prefix + y] = 'a';
+        obj2[this.prefix + y] = 'a';
+        obj3[this.prefix + y] = 'a';
+        obj4[this.prefix + y] = 'a';
+        obj5[this.prefix + y] = 'a';
+        obj6[this.prefix + y] = 'a';
+        obj7[this.prefix + y] = 'a';
+        obj8[this.prefix + y] = 'a';
+        obj9[this.prefix + y] = 'a';
+        obj10[this.prefix + y] = 'a';
     }
 
 }

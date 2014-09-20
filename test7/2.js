@@ -1,9 +1,9 @@
 "use strict";
 
-var x = 2000;
-//      #___---___---
+var tester = require('../tester');
 
-while (x--) {
+tester.interval = 10;
+tester.scenario = function () {
 
     var y = 1000;
 

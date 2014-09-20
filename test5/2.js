@@ -1,22 +1,19 @@
 "use strict";
 
-var x = 3000000000;
-//      #___---___---
-
-var a, b, c;
+var tester = require('../tester');
 
 var s0 = 's0';
-a = function() {
+tester.a = function() {
     var s1 = 's1';
-    b = function () {
+    tester.b = function () {
         var s2 = 's2';
-        c = function () {
+        tester.c = function () {
             var _ = s1;
         }
     }
 };
-a(); b();
+tester.a(); tester.b();
 
-while(x--) {
-    c();
-}
+tester.scenario = function () {
+    tester.c()
+};

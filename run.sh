@@ -3,10 +3,10 @@
 for script in $@
 do
     echo ${script}
-    cat ${script}
-    echo ""
+#    cat ${script}
     date >> ${script}.result
-    time -f 't:%U m:%MKB' -a -o ${script}.result node ${script}; tail -n1 ${script}.result
-    time -f 't:%U m:%MKB' -a -o ${script}.result node ${script}; tail -n1 ${script}.result
+    node ${script} | tee -a ${script}.result
+    node ${script} | tee -a ${script}.result
+    echo ""
 done
 
