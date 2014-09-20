@@ -17,10 +17,10 @@ var tester = {
         rate = this.n * (1000 / ((new Date) - start));
         console.log("%d/s / n %d / %dms / %dKB", parseInt(rate), this.n, (new Date) - start, process.memoryUsage().heapTotal / 1024);
     }
-}
+};
 
 process.on('exit', function () {
     tester.run();
-})
+});
 
 module.exports = tester;
