@@ -15,7 +15,9 @@ Tester.prototype = {
     n: 0,
     scenario: null,
     run: function() {
+        var numeral = require('numeral');
         var i, start = new Date, rate;
+
         while (this.maxTime > (new Date) - start) {
             i = this.interval;
             while (i--) {
@@ -25,7 +27,13 @@ Tester.prototype = {
         }
 
         rate = this.n * (1000 / ((new Date) - start));
-        console.log("%d/s / n %d / %dms / %dKB", parseInt(rate), this.n, (new Date) - start, process.memoryUsage().heapTotal / 1024);
+        console.log(
+            "%s/s / n %d / %dms / %dKB",
+            numeral(rate).format(),
+            this.n,
+            (new Date) - start,
+            process.memoryUsage().heapTotal / 1024
+        );
     }
 };
 

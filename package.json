@@ -1,0 +1,22 @@
+{
+  "name": "js-performance",
+  "version": "0.0.0",
+  "description": "js-performance ==============",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yanoosh/js-performance.git"
+  },
+  "author": "Janusz Jablonski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yanoosh/js-performance/issues"
+  },
+  "homepage": "https://github.com/yanoosh/js-performance",
+  "dependencies": {
+    "numeral": "^1.5.3"
+  }
+}
