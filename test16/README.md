@@ -1,0 +1,1 @@
+Casting to Boolean.
